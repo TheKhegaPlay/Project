@@ -3,13 +3,13 @@
     --main-bg-color: rgb(50, 100, 118);
     --main-header-color: rgb(0, 35, 51);
     --main-neon: 5px 2px 30px lightyellow;
+    --main-reflection: below 0px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.15));
   }  
 
 body {
     margin: auto;
     padding: 0;
     font-family: 'Montserrat', 'Arial', sans-serif;
-    font-weight: bold;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     text-transform: uppercase;
@@ -31,6 +31,7 @@ body::-webkit-scrollbar-thumb {
 a {
     text-decoration: none;
     color: var(--main-text-color);
+    font-weight: bold;
 }
 
 a:hover {
@@ -74,12 +75,16 @@ a:hover {
     border-bottom: 2px solid var(--main-text-color);
 }
 
+.nav-a-active {
+    background-color: rgb(50, 120, 118);
+}
+
 .main {
     margin-left: 70px;
 }
 
 .main-search {
-    background: url("img/the\ weeknd.jpg") no-repeat;
+    background: url("img/bck_the_weeknd.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 500px;
@@ -96,7 +101,7 @@ a:hover {
 
 .search-h1 {
     font-size: 70px;
-    text-shadow: var(--main-neon);
+    -webkit-box-reflect: var(--main-reflection);
 }
 
 .main-nervy {
@@ -106,16 +111,12 @@ a:hover {
 }
 
 .nervy-div-h2 {
-    letter-spacing: 2em;
-}
-
-.nervy-div-h2 {
+    letter-spacing: 40px;
     font-size: 50px;
-    text-shadow: var(--main-neon);
 }
 
 .tickets {
-    height: 1080px;
+    height: 100%;
     background: url("img/concert.jpg") no-repeat;
     background-size: cover;
     background-position: center;
@@ -135,11 +136,19 @@ a:hover {
     letter-spacing: 1em;
 }
 
+.tickets-div-h2 h2 {
+    -webkit-box-reflect: var(--main-reflection);
+}
+
 .ticket-author {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8em;
+}
+
+.ticket-last {
+    padding-bottom: 100px
 }
 
 .author-div-img {
@@ -157,13 +166,51 @@ a:hover {
     line-height: 50px;
 }
 
+.author-div-text h3 {
+    text-shadow: var(--main-neon);
+}
+
 .author-div-text p {
     font-style: italic;
+    line-height: normal;
 }
 
 .author-div-a {
     padding: 15px 40px;
     border-radius: 30px;
     background: linear-gradient(to right, rgb(4, 38, 71), black);
+}
+
+.main-profile {
+    height: 100vh;
+    background: url("img/concert.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 50% 50%;
     
+}
+
+.profile-text {
+    padding-left: 300px;
+}
+
+.footer {
+    margin-left: 70px;
+    padding: 25px 0 25px 0;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.section-links a {
+    float: right;
+}
+
+.section-links i {
+    font-size: 50px;
+    letter-spacing: 70px;
 }
