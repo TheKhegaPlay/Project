@@ -38,6 +38,10 @@ a:hover {
     color: yellow;
 }
 
+li {
+    list-style-type: none;
+}
+
 .fi {
     font-size: 20px;
     padding-right: 20px;
@@ -193,7 +197,25 @@ a:hover {
 }
 
 .profile-text {
-    padding-left: 300px;
+    padding-left: 350px;
+    line-height: 100px;
+}
+
+.profile-img img {
+    border-radius: 50%;
+}
+
+.profile-text, .profile-img {
+    padding-top: 200px;
+}
+
+.profile-text h2 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.main-section-map {
+    text-align: center;
 }
 
 .footer {
