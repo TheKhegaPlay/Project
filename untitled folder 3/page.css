@@ -1,0 +1,95 @@
+body {
+    color: lightyellow;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #326476;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.background {
+    text-shadow: 5px 2px 30px lightyellow;
+    text-align: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background: url("wp5169637.jpg") no-repeat;
+}
+
+h1 {
+
+    text-align: left;
+    margin-top: 20px;
+}
+
+p {
+    text-shadow: 5px 2px 30px lightyellow;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 50px;
+    padding: 0 40px;
+}
+
+.album-row {
+    text-shadow: 5px 2px 30px lightyellow;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.album-row h4 {
+    margin-right: 10px; /* Add some spacing between h4 and the albums */
+}
+
+.album {
+    text-align: center;
+    flex-basis: 23%;
+    font-size: 12px;
+}
+
+.album img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.09));
+}
+
+h3 {
+    font-size: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.album p {
+    margin-top: 16px;
+}
+
+.img-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.img-with-text img {
+    height: auto;
+    width: 300px;
+    margin-top: 20px;
+    padding: 0 100px;
+}
+
+.img-with-text p {
+    text-align: left;
+}
+
+
+hr {
+    border: none;
+    background-color: lightyellow;
+    color: lightyellow;
+    height: 1px;
+}
