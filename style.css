@@ -87,35 +87,35 @@ li {
     margin-left: 70px;
 }
 
-.main-search {
-    background: url("img/bck_the_weeknd.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    width: 100%;
+.carousel-inner {
+    height: 100vh;
 }
 
-.search-div-h1, .nervy-div-h2 {
-    height: 100%;
+
+.carousel-div {
+    display: flex;
+}
+
+.carousel-h1 {
+    margin: auto;
+    font-size: 60px;
+    -webkit-box-reflect: var(--main-reflection);
+}
+
+.carousel-caption {
+    height: 100vh;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.search-h1 {
-    font-size: 70px;
-    -webkit-box-reflect: var(--main-reflection);
+.carousel-img {
+    height: 100%;
 }
 
-.main-nervy {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 580px;
-}
-
-.nervy-div-h2 {
-    letter-spacing: 40px;
+.carousel-h2 {
+    letter-spacing: 20px;
     font-size: 50px;
 }
 
@@ -180,6 +180,7 @@ li {
 }
 
 .author-div-a {
+    width: 150px;
     padding: 15px 40px;
     border-radius: 30px;
     background: linear-gradient(to right, rgb(4, 38, 71), black);
@@ -193,7 +194,6 @@ li {
     background-attachment: fixed;
     display: grid;
     grid-template-columns: 50% 50%;
-    
 }
 
 .profile-text {
@@ -214,28 +214,39 @@ li {
     font-weight: bold;
 }
 
-.main-section-map {
-    text-align: center;
-}
 
 .footer {
     margin-left: 70px;
-    padding: 25px 0 25px 0;
+    height: 50px;
 }
 
 .footer-section {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    width: 100%;
 }
 
-.section-links a {
-    float: right;
+.section-links {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.section-links span {
+    padding: 20px;
+}
+
+.fi {
+    padding: 0;
 }
 
 .section-links i {
-    font-size: 50px;
-    letter-spacing: 70px;
+    font-size: 35px;
 }
+
+.section-img {
+    float: right;
+}
+
 
 
 .background {
@@ -316,4 +327,51 @@ hr {
     background-color: lightyellow;
     color: lightyellow;
     height: 1px;
+}
+
+.tour {
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    grid-column: span;
+    width: 50%;
+    margin: auto;
+}
+
+.tour span {
+    margin-bottom: 40px;
+}
+
+.tour a {
+    margin: auto;
+}
+
+.form {
+    background: url("img/concert.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.form li {
+    list-style-type: disc;
+    text-transform: none;
+}
+
+.form-h1 {
+    text-align: center;
+}
+
+.form-section {
+    width: 50vw;
+    margin: auto;
+}
+
+.form input {
+    width: 500px;
+}
+
+.form-inputs {
+    margin-top: 50px;
+    padding-bottom: 25px;
 }
